@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+
+<suite name="Regression testing" thread-count="3" parallel="tests">
+
+
+ <test name="Login test" verbose="2">
+    <classes>
+      <class name="TestCases.LoginTst"/>
+    </classes>
+  </test> 
+  
+  <test name="Home page" verbose="2">
+    <classes>
+      <class name="TestCases.HomePageTest"/>
+    </classes>
+  </test> 
+  
+   <test name="Registration page" verbose="2">
+    <classes>
+      <class name="TestCases.RegistratinTest"/>
+    </classes>
+  </test> 
+  
+  
+</suite> <!-- Default suite -->

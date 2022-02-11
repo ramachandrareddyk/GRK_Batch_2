@@ -17,6 +17,8 @@ public class LoginTst extends BaseTest{
 	
 	@Test
 	public void verifyLoginPageTest() {
+		home.clickOnMyAccount();
+		home.clickOnLogin();
 		String loginpagetitle= login.getLoginPageTitle();
 		
 		Assert.assertEquals(loginpagetitle, Constents.LoginPageTitle);
@@ -24,11 +26,15 @@ public class LoginTst extends BaseTest{
 	
 	@Test
 	public void verifyReturningCustmertextTest() {
+		home.clickOnMyAccount();
+		home.clickOnLogin();
 		Assert.assertTrue(login.returningCustomerText());
 	}
 	
 	@Test
 	public void verifyForgetPasswordLink() {
+		home.clickOnMyAccount();
+		home.clickOnLogin();
 		Assert.assertTrue(login.forgetPasswordLink());
 	}
 	

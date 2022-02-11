@@ -12,7 +12,7 @@
       </class> <!-- TestCases.RegistratinTest -->
     </classes>
   </test> <!-- Registration page(failed)(failed) -->
-  <test thread-count="5" parallel="methods" name="Login test(failed)(failed)">
+  <test thread-count="3" parallel="tests" name="Login test(failed)(failed)">
     <classes>
       <class name="TestCases.LoginTst">
         <methods>
